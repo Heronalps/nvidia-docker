@@ -2,7 +2,8 @@
 
 package cuda
 
-// #cgo LDFLAGS: -lcudart_static -ldl -lrt
+//#cgo CFLAGS: -I /usr/local/cuda-8.0/include -I /usr/include/nvidia-361/cuda/cuda
+//#cgo LDFLAGS: -L /usr/local/cuda-8.0/lib64 -lcudart_static -ldl -lrt
 // #include <stdlib.h>
 // #include <cuda_runtime_api.h>
 import "C"
