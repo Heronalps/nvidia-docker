@@ -2,7 +2,8 @@
 
 package nvml
 
-// #cgo LDFLAGS: -ldl -Wl,--unresolved-symbols=ignore-in-object-files
+//#cgo CFLAGS: -I /usr/local/cuda-8.0/include -I /usr/include/nvidia-361/cuda/cuda
+//#cgo LDFLAGS: -L /usr/local/cuda-8.0/lib64 -ldl -Wl,--unresolved-symbols=ignore-in-object-files
 // #include "nvml_dl.h"
 import "C"
 
